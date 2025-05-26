@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         frase.textContent = fraseCascataTexto;
         
         // Posição horizontal aleatória
-        frase.style.left = `${Math.random() * 90}vw`; // 0 a 90% da largura da viewport
+        frase.style.left = `${Math.random() * 70}vw`; // 0 a 70% da largura da viewport
 
         // Tempo de atraso aleatório para que não caiam todas juntas
         frase.style.animationDelay = `${Math.random() * 5}s`; 
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cascataInterval) {
             clearInterval(cascataInterval);
         }
-        // Cria uma frase a cada 0.5 segundos
-        cascataInterval = setInterval(criarFraseCascata, 500); 
+        // Cria uma frase a cada 0.2 segundos
+        cascataInterval = setInterval(criarFraseCascata, 200); 
     }
 
     // Função para criar e animar frases de explosão
