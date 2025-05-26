@@ -13,10 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         frase.textContent = fraseCascataTexto;
         
         // Posição horizontal aleatória
-        frase.style.left = `${Math.random() * 70}vw`; // 0 a 70% da largura da viewport
-
+        const minLeft = -30; // Começa 30% da tela para a esquerda
+        const maxLeft = 70;  // Termina 70% da tela para a direita
+        frase.style.left = `${Math.random() * (maxLeft - minLeft) + minLeft}vw`;
+        
         // Tempo de atraso aleatório para que não caiam todas juntas
-        frase.style.animationDelay = `${Math.random() * 5}s`; 
+        frase.style.animationDelay = `${Math.random() * 3}s`; 
 
         cascataContainer.appendChild(frase);
 
