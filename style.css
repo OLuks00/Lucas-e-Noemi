@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove barra de rolagem horizontal */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza logo e título */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header .logo {
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+h1 {
+    margin: 0;
+    color: #444;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Previne overflow */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+
+.car-list {
+    text-align: center; /* Centraliza horizontalmente */
+    margin-bottom: 20px; /* Dá um espaçamento inferior */
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    color: #444; /* Torna a cor consistente com o resto do site */
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
+    gap: 20px;
+    justify-content: center; /* Centraliza o grid */
+    padding: 0 10px; /* Adiciona espaçamento lateral */
+}
+
+.car-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+.car-card h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.car-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.car-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.car-card button:hover {
+    background: #0056b3;
+}
+
+.simulation {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.simulation h2 {
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+}
+
+.simulation form {
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.simulation form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.simulation form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #45a049;
+}
+
+#simulationResult {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
