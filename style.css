@@ -62,7 +62,7 @@ body {
 
 .frase-explosao {
     position: absolute;
-    color: #ffc107; /* Cor da frase Noemi e Lucas */
+    color: #007bff; /* Cor da frase Noemi e Lucas */
     font-size: 2em;
     font-weight: bold;
     white-space: nowrap;
